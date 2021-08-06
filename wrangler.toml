@@ -5,3 +5,7 @@ account_id = ""
 workers_dev = true
 route = ""
 zone_id = ""
+
+kv_namespaces = [ 
+  { binding = "KV_FROM_RUST", preview_id = "5c0f32f95cb94819b8c553b470791efd", id = "6257d3ebe5d948cda9e59aae1f9a7f1a" }
+]

@@ -176,6 +176,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "wasm-bindgen-futures"
+version = "0.4.23"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "81b8b767af23de6ac18bf2168b690bed2902743ddf0fb39252e36f9e2bfc63ea"
+dependencies = [
+ "cfg-if 1.0.0",
+ "js-sys",
+ "wasm-bindgen",
+ "web-sys",
+]
+
+[[package]]
 name = "wasm-bindgen-macro"
 version = "0.2.73"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -215,7 +227,7 @@ dependencies = [
  "js-sys",
  "scoped-tls",
  "wasm-bindgen",
- "wasm-bindgen-futures",
+ "wasm-bindgen-futures 0.3.27",
  "wasm-bindgen-test-macro",
 ]
 
@@ -279,7 +291,10 @@ version = "0.1.0"
 dependencies = [
  "cfg-if 0.1.10",
  "console_error_panic_hook",
+ "js-sys",
  "wasm-bindgen",
+ "wasm-bindgen-futures 0.4.23",
  "wasm-bindgen-test",
+ "web-sys",
  "wee_alloc",
 ]
